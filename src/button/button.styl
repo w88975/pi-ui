@@ -1,0 +1,27 @@
+originColor = rgb(83,83,83)
+hoverColor = rgb(88,176,213)
+
+pi-button {
+    margin: 5px
+}
+
+button {
+    border: 1px solid originColor
+    background: transparent
+    outline: none
+    font-size: 12px
+    padding: 5px
+    color: originColor
+    border-radius: 2px
+    cursor: pointer
+    transition: all 0.1s linear
+
+    &:hover {
+        border: 1px solid hoverColor
+        color: hoverColor
+    }
+
+    &:active {
+        border: 1px solid hoverColor + 50%
+    }
+}

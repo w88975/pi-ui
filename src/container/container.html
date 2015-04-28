@@ -1,0 +1,36 @@
+<dom-module id="pi-container">
+    <style>
+        :host {
+          width: 100%;
+          float: left;
+        }
+        .container {
+          margin-right: auto;
+          margin-left: auto;
+          padding: 0;
+          /*background: red;*/
+        }
+        @media (min-width: 768px) {
+          .container {
+            width: 750px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            width: 970px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {
+            width: 1050px;
+          }
+        }
+    </style>
+<template>
+    <!-- <link rel="stylesheet" href="container.css"> -->
+    <div class="container">
+        <content></content>
+    </div>
+</template>
+<script type="text/javascript" src="container.js"></script>
+</dom-module>
